@@ -479,9 +479,17 @@ a {
 }
 
 img,
-video {
+video,
+iframe {
   width: 100%;
   height: auto;
+}
+
+video,
+iframe {
+  object-fit: contain;
+  overflow-clip-margin: content-box;
+  overflow: clip;
 }
 
 @media (max-width: 899px) {
